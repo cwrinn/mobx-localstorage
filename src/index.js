@@ -26,8 +26,8 @@ function asLocalStorage () {
       return localStorage.length;
     }
 
-    getItem (key) {
-      return this.get(key);
+    getItem (key,defaultValue) {
+      return this.get(key,defaultValue);
     }
 
     setItem (key, value) {
@@ -47,8 +47,12 @@ function asLocalStorage () {
       return store.has(key);
     }
 
-    get (key) {
-      return store.get(key);
+    get (key,defaultValue) {
+      var value = defaultValue;
+      if (store.has(key)) {
+        value = store.get(key);
+      }
+      return value;
     }
 
     set (key, value) {
