@@ -1,7 +1,7 @@
 {
-  "name": "mobx-localstorage",
-  "version": "0.1.7",
-  "description": "A declarative reactive localStorage using MobX",
+  "name": "mobx-localstorage-ordefault",
+  "version": "0.0.1",
+  "description": "A declarative reactive localStorage using MobX, with the ability to provide defaults for non-existant keys.",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aihornmac/mobx-localstorage.git"
+    "url": "git+https://github.com/cwrinn/mobx-localstorage.git"
   },
   "keywords": [
     "mobx",
     "localstorage"
   ],
-  "author": "Aihorn Mac",
+  "author": "Christopher Wrinn",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aihornmac/mobx-localstorage/issues"
+    "url": "https://github.com/cwrinn/mobx-localstorage/issues"
   },
-  "homepage": "https://github.com/aihornmac/mobx-localstorage#readme",
+  "homepage": "https://github.com/cwrinn/mobx-localstorage#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
